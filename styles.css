@@ -151,6 +151,7 @@
     box-shadow: var(--shadow);
     transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
     color: var(--ink);
+    height: 8.5em;
   }
   .card:hover {
     transform: translateY(-2px);
