@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jason Nguyen – Portfolio</title>
+  <meta name="description" content="Jason Nguyen portfolio" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <h1><a href="index.html">JTNguyen</a></h1>
+      </div>
+      <nav>
+        <a href="pdf/Resume_JTNguyen.pdf">resume</a>
+        <span aria-hidden="true">&nbsp;•&nbsp;</span>
+        <a href="https://www.linkedin.com/in/jason-nguyen-b04aa32a9/" target="_blank" rel="noopener">linkedin</a>
+        <span aria-hidden="true">&nbsp;•&nbsp;</span>
+        <a href="https://github.com/" target="_blank" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <h2 class="title">Jason Nguyen</h2>
+      <p class="subtitle">Aspiring UX Researcher</p>
+    </section>
+
+
+    <section class="two-col" aria-label="Projects">
+
+      <div id="designs" class="column">
+        <div class="section-head">
+          <h2>DESIGNS</h2>
+        </div>
+        <div class="grid">
+          <a class="card" href="https://guessthatmon.netlify.app"><h3>guess that 'mon <span class="arrow">→</span></h3><p>Created wireframe & Figma prototype, used vite + react + tailwindcss</p></a>
+          <a class="card" href="https://www.figma.com/design/nx94hOYaRDJk6tYKwjJ3A6/GeoSafe?node-id=0-1&t=kz1dT8D9b3xoGy3K-1"><h3>Geosafe<span class="arrow">→</span></h3><p>Prototype created via Figma</p></a>
+          <a class="card" href="https://www.figma.com/proto/mfk2gQfFhD4B8755erR9S7/zm_ee?page-id=0%3A1&node-id=12-116&p=f&viewport=-675%2C573%2C0.25&t=2lHADqspSBS5NxAt-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=12%3A116&show-proto-sidebar=1"><h3>ZM_EE <span class="arrow">→</span></h3><p>Prototype created via Figma</p></a>
+          <!--<a class="card" href="#"><h3>content <span class="arrow">→</span></h3><p>content</p></a>-->
+        </div>
+      </div>
+
+
+      <div id="research" class="column">
+        <div class="section-head">
+          <h2>RESEARCH</h2>
+        </div>
+        <div class="grid">
+          <a class="card" href="#"><h3>Affinity Diagram <span class="arrow">→</span></h3><p>Qualitative analysis regarding online privacy from user interviews</p></a>
+          <a class="card" href="#"><h3>Usability Study<span class="arrow">→</span></h3><p>Conducted think-aloud usability study</p></a>
+          <!--<a class="card" href="#"><h3>Task Switching & Errors <span class="arrow">→</span></h3><p>Within-subjects study on notification timing.</p></a>
+          <a class="card" href="#"><h3>Accessibility Scorecard <span class="arrow">→</span></h3><p>Simple rubric mapped to WCAG 2.2 AA.</p></a>-->
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about">
+      <div class="section-head"><h2>ABOUT</h2></div>
+      <p class="subtitle">I am a Michigan State Student majoring in Information Science - Human Centered Technology focused. I wanted to pursue UX because I wanted to help create technologies or other products to make peoples lives better. I've learned a lot throughout my time during University  </p>
+    </section>
+
+
+    <footer>
+      <div class="container foot">
+        <small>© <span id="year"></span> Jason Nguyen</small>
+        <p>Thanks you for taking interest in my experiences!</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
