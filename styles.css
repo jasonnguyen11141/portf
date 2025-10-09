@@ -192,4 +192,9 @@
   .foot small {
     color: var(--muted);
   }
+
+
+  .adTypography {
+    text-indent: 1.5em;
+  }
   
