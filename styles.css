@@ -176,6 +176,18 @@
     opacity: 1;
   }
   
+  /* Affinity Diagram */
+  .adTypography {
+    text-indent: 1.5em;
+  }
+  #affinityDiagram {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* Usability Study */
+
+
   /* Footer */
   footer {
     border-top: 1px solid var(--border);
@@ -193,8 +205,4 @@
     color: var(--muted);
   }
 
-
-  .adTypography {
-    text-indent: 1.5em;
-  }
   
