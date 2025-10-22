@@ -176,10 +176,11 @@
     opacity: 1;
   }
   
-  /* Affinity Diagram */
+  /* Typography */
   .adTypography {
     text-indent: 1.5em;
   }
+
   #affinityDiagram {
     max-width: var(--maxw);
     margin: 0 auto;
