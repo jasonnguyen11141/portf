@@ -8,7 +8,7 @@
     --radius: 16px;
     --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 20px rgba(0,0,0,.06);
     --shadow-hover: 0 2px 4px rgba(0,0,0,.07), 0 12px 28px rgba(0,0,0,.1);
-    --maxw: 1100px;
+    --maxw: 1400px;
   }
   
   html, body {
@@ -101,6 +101,25 @@
     font-size: 18px;
     color: var(--muted);
   }
+
+  .projects-grid{
+    display: grid;
+    gap: 24px;
+  }
+  
+  @media (min-width: 900px){
+    .projects-grid{
+      grid-template-columns: 1fr 1fr; /* designs + research sit next to each other */
+      align-items: start;
+    }
+  }
+  
+  .group-title{
+    margin: 0 0 12px;
+    font-size: 14px;
+    letter-spacing: .18em;
+    color: var(--muted);
+  }
   
   /* Section */
   section {
@@ -118,28 +137,18 @@
     letter-spacing: .18em;
     color: var(--muted);
   }
-  
-  /* Two-column layout */
-  .two-col {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr;
-  }
-  @media (min-width: 900px) {
-    .two-col {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+
   
   /* Cards */
   .grid {
     display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 4fr));
   }
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     .grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      gap: 24px; 
     }
   }
   .card {
@@ -151,8 +160,11 @@
     box-shadow: var(--shadow);
     transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
     color: var(--ink);
-    height: 8.5em;
+    height: auto;          /* allow growth */
+    min-height: 10.5em;    /* optional baseline size */
+   
   }
+  
   .card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
