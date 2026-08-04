@@ -139,7 +139,7 @@
   }
 
   
-  /* Cards */
+  /* Projects */
   .grid {
     display: grid;
     gap: 24px;
@@ -197,6 +197,11 @@
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .figmaLink {
+    color: blue
+
   }
 
 
