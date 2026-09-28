@@ -204,6 +204,37 @@
 
   }
 
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+  }
+  
+  .about-photo {
+    flex: 0 0 280px;
+  }
+  
+  .about-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    display: block;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text .subtitle {
+    margin-top: 0;
+    line-height: 1.7;
+  }
+
 
   /* Footer */
   footer {
