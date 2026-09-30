@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +8,7 @@
   <meta name="description" content="Jason Nguyen portfolio" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
     <div class="container nav" role="navigation" aria-label="Primary">
@@ -14,3 +16,56 @@
         <h1><a href="index.html">JTNguyen</a></h1>
       </div>
       <nav>
+        <a href="pdf/Resume_JTNguyen.pdf">resume</a>
+        <span aria-hidden="true">&nbsp;•&nbsp;</span>
+        <a href="https://www.linkedin.com/in/jason-nguyen-b04aa32a9/" target="_blank" rel="noopener">linkedin</a>
+        <span aria-hidden="true">&nbsp;•&nbsp;</span>
+        <a href="https://github.com/" target="_blank" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+  <section id="affinityDiagram">
+    <h1>TempoMate</h1>
+    <h2>Empathize</h2>
+    <p class="adTypography">
+      As a former music student, I know practicing can be frustrating, staying in tune, keeping time, articulating well,
+      etc. When working on this project with another classmate, We conducted a literature review of current robots and devices that are directly involved in music. We've
+      found robots that conduct for orchestras, a deep learning system that assesses the players performance, and other
+      systems built for improvement for musicians. We wanted to create something that could help solve such issues making
+      practicing smoother for music students for the best results.
+    </p>
+    <h2>Define</h2>
+
+    <p class="adTypography">
+      I created a survey for music students to gather data on their current use of their metronome and find any pain
+      points the student might have with their current metronome. I also asked for any additional features the students
+      may deem useful they we may add to our prototype. We needed to know what tools students are curently using. Most studetns use digital metronomes compared to an app. 57% of students uses a digital metronome compared to the 43% that uses an app. We found that most students have trouble changing the tempo of
+      the metronome in the middle of practicing their piece, though 14% of students responded with having no issues, 29% of students responded with having those issues sometimes, and 57% of students had a problem. Each response has helped us come up with design decisions for our prototype. 
+    </p>
+   <h2>Ideate</h2>
+   <p class="adTypography"></p>
+    I wanted to come up with as many solutions as I can to solve issues I have generated many sketches for the TempoMate metronome. A basic looking digital metronome, a reimagined digital metronome that implemented some to all considered features, a digital metronome with an arm for visual purposes, an app, etc. Many of these sketches we thought could solve so many issue and many were thought to cause new issues for music students. 
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container foot">
+      <small>@ <span id="year"></span> Jason Nguyen</small>
+      <p>Thank you for taking interest in my experiences!</p>
+    </div>
+  </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
